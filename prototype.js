@@ -30,3 +30,15 @@ Player.prototype.scoreSum = function(){
 console.log(Player1.scoreSum());
 console.log(Player2.scoreSum());
 console.log(Player3.scoreSum());
+
+Player1.scoreSum = function(){
+    var sum = 0;
+    for (var key in this.score){
+        sum += this.score[key];
+    };
+    return "Player1's total score: " + sum;
+}
+
+console.log(Player1.scoreSum());
+console.log(Player2.scoreSum());
+console.log(Player3.scoreSum());
