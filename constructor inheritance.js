@@ -19,5 +19,5 @@ Obj_.prototype.func_ = function(){
 
 var ins = new Obj('value');
 var ins_ = new Obj_('value', 'value_');
-console.log(ins, ins.constructor, ins.func());
-console.log(ins_, ins_.constructor, ins_.func(), ins_.func_());
+console.log(ins, Obj.prototype.constructor, ins.func());
+console.log(ins_, Obj_.prototype.constructor, ins_.func(), ins_.func_());
